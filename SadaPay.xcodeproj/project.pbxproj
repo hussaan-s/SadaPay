@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A40DAD42299009010087C02C /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40DAD3A299009010087C02C /* Networking.framework */; };
-		A40DAD47299009010087C02C /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD46299009010087C02C /* NetworkingTests.swift */; };
-		A40DAD48299009010087C02C /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = A40DAD3C299009010087C02C /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A40DAD51299009890087C02C /* WebClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD50299009890087C02C /* WebClientTests.swift */; };
+		A40DAD5529901BDE0087C02C /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD5429901BDE0087C02C /* WebClient.swift */; };
+		A40DAD5729901CBC0087C02C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD5629901CBC0087C02C /* APIClient.swift */; };
+		A40DAD5929901D2E0087C02C /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD5829901D2E0087C02C /* URLRequestConvertible.swift */; };
 		A458E74E297AB4CD00E275AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458E74D297AB4CD00E275AC /* AppDelegate.swift */; };
 		A458E750297AB4CD00E275AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458E74F297AB4CD00E275AC /* SceneDelegate.swift */; };
 		A458E757297AB4CE00E275AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A458E756297AB4CE00E275AC /* Assets.xcassets */; };
@@ -46,9 +48,11 @@
 
 /* Begin PBXFileReference section */
 		A40DAD3A299009010087C02C /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A40DAD3C299009010087C02C /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
 		A40DAD41299009010087C02C /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A40DAD46299009010087C02C /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		A40DAD50299009890087C02C /* WebClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClientTests.swift; sourceTree = "<group>"; };
+		A40DAD5429901BDE0087C02C /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
+		A40DAD5629901CBC0087C02C /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A40DAD5829901D2E0087C02C /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
 		A458E74A297AB4CD00E275AC /* SadaPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadaPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A458E74D297AB4CD00E275AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A458E74F297AB4CD00E275AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +118,7 @@
 		A40DAD3B299009010087C02C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A40DAD3C299009010087C02C /* Networking.h */,
+				A40DAD5229901BC10087C02C /* APIClient */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -122,9 +126,43 @@
 		A40DAD45299009010087C02C /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				A40DAD46299009010087C02C /* NetworkingTests.swift */,
+				A40DAD5A29901EA40087C02C /* APIClient */,
 			);
 			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		A40DAD4F299009600087C02C /* WebClient */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD50299009890087C02C /* WebClientTests.swift */,
+			);
+			path = WebClient;
+			sourceTree = "<group>";
+		};
+		A40DAD5229901BC10087C02C /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD5329901BC90087C02C /* WebClient */,
+				A40DAD5629901CBC0087C02C /* APIClient.swift */,
+				A40DAD5829901D2E0087C02C /* URLRequestConvertible.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		A40DAD5329901BC90087C02C /* WebClient */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD5429901BDE0087C02C /* WebClient.swift */,
+			);
+			path = WebClient;
+			sourceTree = "<group>";
+		};
+		A40DAD5A29901EA40087C02C /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD4F299009600087C02C /* WebClient */,
+			);
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 		A458E741297AB4CD00E275AC = {
@@ -228,7 +266,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A40DAD48299009010087C02C /* Networking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +399,7 @@
 				TargetAttributes = {
 					A40DAD39299009010087C02C = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					A40DAD40299009010087C02C = {
 						CreatedOnToolsVersion = 14.2;
@@ -456,6 +494,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40DAD5529901BDE0087C02C /* WebClient.swift in Sources */,
+				A40DAD5929901D2E0087C02C /* URLRequestConvertible.swift in Sources */,
+				A40DAD5729901CBC0087C02C /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A40DAD47299009010087C02C /* NetworkingTests.swift in Sources */,
+				A40DAD51299009890087C02C /* WebClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +576,7 @@
 		A40DAD49299009010087C02C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -560,6 +602,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -570,6 +613,7 @@
 		A40DAD4A299009010087C02C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -605,6 +649,7 @@
 		A40DAD4B299009010087C02C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -625,6 +670,7 @@
 		A40DAD4C299009010087C02C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
