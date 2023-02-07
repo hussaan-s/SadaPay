@@ -36,6 +36,11 @@
 		A458E78E297ABA6100E275AC /* SadaPayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A458E786297ABA6000E275AC /* SadaPayKit.framework */; platformFilter = ios; };
 		A48BAC722992C00700DFD27F /* TrendingRepoShimmeringTVCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC712992C00700DFD27F /* TrendingRepoShimmeringTVCellViewModel.swift */; };
 		A48BAC742992C11900DFD27F /* TrendingRepoTVCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC732992C11900DFD27F /* TrendingRepoTVCellViewModel.swift */; };
+		A48BAC772992C76E00DFD27F /* TrendingRepoTVCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC762992C76E00DFD27F /* TrendingRepoTVCellViewModelTests.swift */; };
+		A48BAC7A2992CA7E00DFD27F /* TrendingRepoShimmeringTVCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC792992CA7E00DFD27F /* TrendingRepoShimmeringTVCellViewModelTests.swift */; };
+		A48BAC7D2992CBC700DFD27F /* TrendingRepoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC7C2992CBC700DFD27F /* TrendingRepoTVCell.swift */; };
+		A48BAC802992CCB000DFD27F /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC7F2992CCB000DFD27F /* ReusableView.swift */; };
+		A48BAC832992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC822992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +110,11 @@
 		A458E78D297ABA6100E275AC /* SadaPayKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48BAC712992C00700DFD27F /* TrendingRepoShimmeringTVCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoShimmeringTVCellViewModel.swift; sourceTree = "<group>"; };
 		A48BAC732992C11900DFD27F /* TrendingRepoTVCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoTVCellViewModel.swift; sourceTree = "<group>"; };
+		A48BAC762992C76E00DFD27F /* TrendingRepoTVCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoTVCellViewModelTests.swift; sourceTree = "<group>"; };
+		A48BAC792992CA7E00DFD27F /* TrendingRepoShimmeringTVCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoShimmeringTVCellViewModelTests.swift; sourceTree = "<group>"; };
+		A48BAC7C2992CBC700DFD27F /* TrendingRepoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoTVCell.swift; sourceTree = "<group>"; };
+		A48BAC7F2992CCB000DFD27F /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		A48BAC822992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoShimmeringTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +346,7 @@
 		A40DAD9629928B120087C02C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A48BAC752992C75C00DFD27F /* Cell */,
 				A40DAD9B29928BA80087C02C /* TrendingReposViewModelTests.swift */,
 			);
 			path = ViewModel;
@@ -352,6 +363,7 @@
 		A40DAD9929928B7B0087C02C /* TrendingRepos */ = {
 			isa = PBXGroup;
 			children = (
+				A48BAC7B2992CBB700DFD27F /* View */,
 				A40DAD9A29928B830087C02C /* ViewModel */,
 			);
 			path = TrendingRepos;
@@ -395,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				A40DADAA2992BC2D0087C02C /* ReusableViewModel.swift */,
+				A48BAC7F2992CCB000DFD27F /* ReusableView.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -505,6 +518,24 @@
 				A48BAC732992C11900DFD27F /* TrendingRepoTVCellViewModel.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		A48BAC752992C75C00DFD27F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A48BAC762992C76E00DFD27F /* TrendingRepoTVCellViewModelTests.swift */,
+				A48BAC792992CA7E00DFD27F /* TrendingRepoShimmeringTVCellViewModelTests.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A48BAC7B2992CBB700DFD27F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A48BAC7C2992CBC700DFD27F /* TrendingRepoTVCell.swift */,
+				A48BAC822992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -827,11 +858,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48BAC7D2992CBC700DFD27F /* TrendingRepoTVCell.swift in Sources */,
 				A48BAC722992C00700DFD27F /* TrendingRepoShimmeringTVCellViewModel.swift in Sources */,
 				A40DADAB2992BC2D0087C02C /* ReusableViewModel.swift in Sources */,
+				A48BAC802992CCB000DFD27F /* ReusableView.swift in Sources */,
 				A40DAD9E29928BB40087C02C /* TrendingReposViewModel.swift in Sources */,
 				A40DADA82992B9CB0087C02C /* ErrorlessCombine.swift in Sources */,
 				A48BAC742992C11900DFD27F /* TrendingRepoTVCellViewModel.swift in Sources */,
+				A48BAC832992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,7 +873,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48BAC7A2992CA7E00DFD27F /* TrendingRepoShimmeringTVCellViewModelTests.swift in Sources */,
 				A40DAD9C29928BA80087C02C /* TrendingReposViewModelTests.swift in Sources */,
+				A48BAC772992C76E00DFD27F /* TrendingRepoTVCellViewModelTests.swift in Sources */,
 				A40DADA42992B6DC0087C02C /* MockReposService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

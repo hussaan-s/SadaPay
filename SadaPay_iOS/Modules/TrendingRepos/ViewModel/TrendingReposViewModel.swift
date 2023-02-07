@@ -41,7 +41,7 @@ class TrendingReposViewModel: TrendingReposViewModelType {
             do {
                 let repos =  try await reposService.fetchRepos()
                 await MainActor.run {
-                    cellViewModelsSubject.send(repos.items.map {  TrendingRepoTVCellViewModel(repo:$0) })
+                    cellViewModelsSubject.send(repos.items.map { TrendingRepoTVCellViewModel(repo:$0) })
                 }
             } catch {
                 await MainActor.run {
