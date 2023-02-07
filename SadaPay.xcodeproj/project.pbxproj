@@ -12,14 +12,22 @@
 		A40DAD5529901BDE0087C02C /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD5429901BDE0087C02C /* WebClient.swift */; };
 		A40DAD5729901CBC0087C02C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD5629901CBC0087C02C /* APIClient.swift */; };
 		A40DAD5929901D2E0087C02C /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD5829901D2E0087C02C /* URLRequestConvertible.swift */; };
+		A40DAD5F299102980087C02C /* ReposServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD5E299102980087C02C /* ReposServiceTests.swift */; };
+		A40DAD62299109270087C02C /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD61299109270087C02C /* RequestTests.swift */; };
+		A40DAD652991095F0087C02C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD642991095F0087C02C /* Request.swift */; };
+		A40DAD6829910A950087C02C /* ReposService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD6729910A950087C02C /* ReposService.swift */; };
+		A40DAD6A29910AD60087C02C /* BaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD6929910AD60087C02C /* BaseServiceTests.swift */; };
+		A40DAD6C29910BF90087C02C /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD6B29910BF90087C02C /* BaseService.swift */; };
+		A40DAD7029910E800087C02C /* MockedAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD6F29910E800087C02C /* MockedAPIClient.swift */; };
+		A40DAD73299186100087C02C /* MockedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD72299186100087C02C /* MockedRequest.swift */; };
+		A40DAD76299187920087C02C /* MockedTrendingReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD75299187920087C02C /* MockedTrendingReposResponse.swift */; };
+		A40DAD79299189440087C02C /* Repos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DAD78299189440087C02C /* Repos.swift */; };
 		A458E74E297AB4CD00E275AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458E74D297AB4CD00E275AC /* AppDelegate.swift */; };
 		A458E750297AB4CD00E275AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458E74F297AB4CD00E275AC /* SceneDelegate.swift */; };
 		A458E757297AB4CE00E275AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A458E756297AB4CE00E275AC /* Assets.xcassets */; };
 		A458E75A297AB4CE00E275AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A458E758297AB4CE00E275AC /* LaunchScreen.storyboard */; };
 		A458E765297AB4CE00E275AC /* SadaPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458E764297AB4CE00E275AC /* SadaPayTests.swift */; };
 		A458E78E297ABA6100E275AC /* SadaPayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A458E786297ABA6000E275AC /* SadaPayKit.framework */; platformFilter = ios; };
-		A458E793297ABA6100E275AC /* SadaPayKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458E792297ABA6100E275AC /* SadaPayKitTests.swift */; };
-		A458E794297ABA6100E275AC /* SadaPayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A458E788297ABA6100E275AC /* SadaPayKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,16 @@
 		A40DAD5429901BDE0087C02C /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
 		A40DAD5629901CBC0087C02C /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A40DAD5829901D2E0087C02C /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		A40DAD5E299102980087C02C /* ReposServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposServiceTests.swift; sourceTree = "<group>"; };
+		A40DAD61299109270087C02C /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
+		A40DAD642991095F0087C02C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		A40DAD6729910A950087C02C /* ReposService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposService.swift; sourceTree = "<group>"; };
+		A40DAD6929910AD60087C02C /* BaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceTests.swift; sourceTree = "<group>"; };
+		A40DAD6B29910BF90087C02C /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		A40DAD6F29910E800087C02C /* MockedAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedAPIClient.swift; sourceTree = "<group>"; };
+		A40DAD72299186100087C02C /* MockedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedRequest.swift; sourceTree = "<group>"; };
+		A40DAD75299187920087C02C /* MockedTrendingReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedTrendingReposResponse.swift; sourceTree = "<group>"; };
+		A40DAD78299189440087C02C /* Repos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repos.swift; sourceTree = "<group>"; };
 		A458E74A297AB4CD00E275AC /* SadaPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadaPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A458E74D297AB4CD00E275AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A458E74F297AB4CD00E275AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,9 +80,7 @@
 		A458E760297AB4CE00E275AC /* SadaPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A458E764297AB4CE00E275AC /* SadaPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayTests.swift; sourceTree = "<group>"; };
 		A458E786297ABA6000E275AC /* SadaPayKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SadaPayKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A458E788297ABA6100E275AC /* SadaPayKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SadaPayKit.h; sourceTree = "<group>"; };
 		A458E78D297ABA6100E275AC /* SadaPayKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A458E792297ABA6100E275AC /* SadaPayKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayKitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +181,85 @@
 			path = APIClient;
 			sourceTree = "<group>";
 		};
+		A40DAD5D299102680087C02C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD6D29910E600087C02C /* Mock */,
+				A40DAD60299109160087C02C /* Base */,
+				A40DAD5E299102980087C02C /* ReposServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A40DAD60299109160087C02C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD61299109270087C02C /* RequestTests.swift */,
+				A40DAD6929910AD60087C02C /* BaseServiceTests.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A40DAD632991094A0087C02C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD642991095F0087C02C /* Request.swift */,
+				A40DAD6B29910BF90087C02C /* BaseService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A40DAD6629910A800087C02C /*  Services */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD632991094A0087C02C /* Base */,
+				A40DAD6729910A950087C02C /* ReposService.swift */,
+			);
+			path = " Services";
+			sourceTree = "<group>";
+		};
+		A40DAD6D29910E600087C02C /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD74299187800087C02C /* Response */,
+				A40DAD71299185B70087C02C /* Request */,
+				A40DAD6E29910E650087C02C /* APIClient */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		A40DAD6E29910E650087C02C /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD6F29910E800087C02C /* MockedAPIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		A40DAD71299185B70087C02C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD72299186100087C02C /* MockedRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		A40DAD74299187800087C02C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD75299187920087C02C /* MockedTrendingReposResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A40DAD77299189370087C02C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A40DAD78299189440087C02C /* Repos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A458E741297AB4CD00E275AC = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +341,8 @@
 		A458E787297ABA6100E275AC /* SadaPayKit */ = {
 			isa = PBXGroup;
 			children = (
-				A458E788297ABA6100E275AC /* SadaPayKit.h */,
+				A40DAD77299189370087C02C /* Models */,
+				A40DAD6629910A800087C02C /*  Services */,
 			);
 			path = SadaPayKit;
 			sourceTree = "<group>";
@@ -254,7 +350,7 @@
 		A458E791297ABA6100E275AC /* SadaPayKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				A458E792297ABA6100E275AC /* SadaPayKitTests.swift */,
+				A40DAD5D299102680087C02C /* Services */,
 			);
 			path = SadaPayKitTests;
 			sourceTree = "<group>";
@@ -273,7 +369,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A458E794297ABA6100E275AC /* SadaPayKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +508,7 @@
 					};
 					A458E785297ABA6000E275AC = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					A458E78C297ABA6100E275AC = {
 						CreatedOnToolsVersion = 14.2;
@@ -529,6 +625,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40DAD652991095F0087C02C /* Request.swift in Sources */,
+				A40DAD6829910A950087C02C /* ReposService.swift in Sources */,
+				A40DAD6C29910BF90087C02C /* BaseService.swift in Sources */,
+				A40DAD79299189440087C02C /* Repos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +636,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A458E793297ABA6100E275AC /* SadaPayKitTests.swift in Sources */,
+				A40DAD7029910E800087C02C /* MockedAPIClient.swift in Sources */,
+				A40DAD73299186100087C02C /* MockedRequest.swift in Sources */,
+				A40DAD76299187920087C02C /* MockedTrendingReposResponse.swift in Sources */,
+				A40DAD62299109270087C02C /* RequestTests.swift in Sources */,
+				A40DAD6A29910AD60087C02C /* BaseServiceTests.swift in Sources */,
+				A40DAD5F299102980087C02C /* ReposServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,6 +1014,7 @@
 		A458E796297ABA6100E275AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -934,6 +1040,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -944,6 +1051,7 @@
 		A458E797297ABA6100E275AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -979,6 +1087,7 @@
 		A458E799297ABA6100E275AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -999,6 +1108,7 @@
 		A458E79A297ABA6100E275AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
