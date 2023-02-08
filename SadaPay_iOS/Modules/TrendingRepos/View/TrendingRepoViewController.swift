@@ -103,17 +103,15 @@ extension TrendingReposViewController {
         
         viewModel.error
             .sink { [weak self] error in
-                self?.showError(error)
+                self?.showErrorScreen(error)
             }
             .store(in: &cancellables)
     }
     
-    func showError(_ message: String) {
-        
-    }
-    
-    func hideError() {
-
+    func showErrorScreen(_ message: String) {
+        self.showError(message: message, actionHandler: .init(title: "Retry", handler: { [weak self] in
+            self?.viewModel.reload()
+        }))
     }
 }
 

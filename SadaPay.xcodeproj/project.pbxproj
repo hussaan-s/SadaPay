@@ -58,6 +58,10 @@
 		A48BACB129937B3D00DFD27F /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACB029937B3D00DFD27F /* AppFlowController.swift */; };
 		A48BACB62993851F00DFD27F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A48BACB52993851F00DFD27F /* Kingfisher */; };
 		A48BACBA2993856700DFD27F /* UILeadingImageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACB92993856700DFD27F /* UILeadingImageLabel.swift */; };
+		A48BACC329938E9400DFD27F /* UIServerErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACC229938E9400DFD27F /* UIServerErrorView.swift */; };
+		A48BACC629938EE600DFD27F /* lottie-retry.json in Resources */ = {isa = PBXBuildFile; fileRef = A48BACC529938EE600DFD27F /* lottie-retry.json */; };
+		A48BACC929938F5400DFD27F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A48BACC829938F5400DFD27F /* Lottie */; };
+		A48BACCC29938F9700DFD27F /* UIViewController+UIServerErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACCB29938F9700DFD27F /* UIViewController+UIServerErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +222,9 @@
 		A48BACAD29937A7D00DFD27F /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		A48BACB029937B3D00DFD27F /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
 		A48BACB92993856700DFD27F /* UILeadingImageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILeadingImageLabel.swift; sourceTree = "<group>"; };
+		A48BACC229938E9400DFD27F /* UIServerErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIServerErrorView.swift; sourceTree = "<group>"; };
+		A48BACC529938EE600DFD27F /* lottie-retry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-retry.json"; sourceTree = "<group>"; };
+		A48BACCB29938F9700DFD27F /* UIViewController+UIServerErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIServerErrorView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +250,7 @@
 				A48BACB62993851F00DFD27F /* Kingfisher in Frameworks */,
 				A48BAC8F2993798200DFD27F /* Networking.framework in Frameworks */,
 				A48BAC932993798200DFD27F /* SadaPayKit.framework in Frameworks */,
+				A48BACC929938F5400DFD27F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +598,7 @@
 		A458E77E297AB57A00E275AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A48BACC429938ED700DFD27F /* Lottie */,
 				A458E756297AB4CE00E275AC /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -714,6 +723,8 @@
 		A48BACB72993853600DFD27F /* SadaPayUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A48BACCA29938F7100DFD27F /* Extensions */,
+				A48BACC129938E6F00DFD27F /* UIServerErrorView */,
 				A48BACB82993854D00DFD27F /* UILeadingImageLabel */,
 			);
 			path = SadaPayUIKit;
@@ -725,6 +736,30 @@
 				A48BACB92993856700DFD27F /* UILeadingImageLabel.swift */,
 			);
 			path = UILeadingImageLabel;
+			sourceTree = "<group>";
+		};
+		A48BACC129938E6F00DFD27F /* UIServerErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACC229938E9400DFD27F /* UIServerErrorView.swift */,
+			);
+			path = UIServerErrorView;
+			sourceTree = "<group>";
+		};
+		A48BACC429938ED700DFD27F /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACC529938EE600DFD27F /* lottie-retry.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		A48BACCA29938F7100DFD27F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACCB29938F9700DFD27F /* UIViewController+UIServerErrorView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -809,6 +844,7 @@
 			name = SadaPay_iOS;
 			packageProductDependencies = (
 				A48BACB52993851F00DFD27F /* Kingfisher */,
+				A48BACC829938F5400DFD27F /* Lottie */,
 			);
 			productName = SadaPay_iOS;
 			productReference = A40DAD7F299285710087C02C /* SadaPay_iOS.framework */;
@@ -962,6 +998,7 @@
 			mainGroup = A458E741297AB4CD00E275AC;
 			packageReferences = (
 				A48BACB42993851F00DFD27F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				A48BACC729938F5300DFD27F /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = A458E74B297AB4CD00E275AC /* Products */;
 			projectDirPath = "";
@@ -1012,6 +1049,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48BACC629938EE600DFD27F /* lottie-retry.json in Resources */,
 				A458E75A297AB4CE00E275AC /* LaunchScreen.storyboard in Resources */,
 				A458E757297AB4CE00E275AC /* Assets.xcassets in Resources */,
 			);
@@ -1068,6 +1106,7 @@
 				A48BAC722992C00700DFD27F /* TrendingRepoShimmeringTVCellViewModel.swift in Sources */,
 				A40DADAB2992BC2D0087C02C /* ReusableViewModel.swift in Sources */,
 				A48BAC802992CCB000DFD27F /* ReusableView.swift in Sources */,
+				A48BACCC29938F9700DFD27F /* UIViewController+UIServerErrorView.swift in Sources */,
 				A48BAC882992D25100DFD27F /* ConfigurableTableViewCell.swift in Sources */,
 				A48BACB129937B3D00DFD27F /* AppFlowController.swift in Sources */,
 				A48BACBA2993856700DFD27F /* UILeadingImageLabel.swift in Sources */,
@@ -1075,6 +1114,7 @@
 				A48BAC852992D13E00DFD27F /* TrendingRepoViewController.swift in Sources */,
 				A40DADA82992B9CB0087C02C /* ErrorlessCombine.swift in Sources */,
 				A48BAC742992C11900DFD27F /* TrendingRepoTVCellViewModel.swift in Sources */,
+				A48BACC329938E9400DFD27F /* UIServerErrorView.swift in Sources */,
 				A48BAC832992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift in Sources */,
 				A48BACAE29937A7D00DFD27F /* FlowController.swift in Sources */,
 			);
@@ -1887,6 +1927,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		A48BACC729938F5300DFD27F /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1894,6 +1942,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A48BACB42993851F00DFD27F /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		A48BACC829938F5400DFD27F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A48BACC729938F5300DFD27F /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
