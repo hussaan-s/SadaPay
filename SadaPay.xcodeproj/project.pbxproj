@@ -43,6 +43,19 @@
 		A48BAC832992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC822992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift */; };
 		A48BAC852992D13E00DFD27F /* TrendingRepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC842992D13E00DFD27F /* TrendingRepoViewController.swift */; };
 		A48BAC882992D25100DFD27F /* ConfigurableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BAC872992D25100DFD27F /* ConfigurableTableViewCell.swift */; };
+		A48BAC8A2993797A00DFD27F /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40DAD3A299009010087C02C /* Networking.framework */; };
+		A48BAC8F2993798200DFD27F /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40DAD3A299009010087C02C /* Networking.framework */; };
+		A48BAC932993798200DFD27F /* SadaPayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A458E786297ABA6000E275AC /* SadaPayKit.framework */; };
+		A48BAC982993799600DFD27F /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40DAD3A299009010087C02C /* Networking.framework */; };
+		A48BAC992993799600DFD27F /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A40DAD3A299009010087C02C /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A48BAC9C2993799600DFD27F /* SadaPay_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40DAD7F299285710087C02C /* SadaPay_iOS.framework */; };
+		A48BAC9D2993799600DFD27F /* SadaPay_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A40DAD7F299285710087C02C /* SadaPay_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A48BACA02993799600DFD27F /* SadaPayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A458E786297ABA6000E275AC /* SadaPayKit.framework */; };
+		A48BACA12993799600DFD27F /* SadaPayKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A458E786297ABA6000E275AC /* SadaPayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A48BACA7299379D100DFD27F /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACA6299379D100DFD27F /* AppDependencyContainer.swift */; };
+		A48BACAB29937A5E00DFD27F /* FlowControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACAA29937A5E00DFD27F /* FlowControllerTests.swift */; };
+		A48BACAE29937A7D00DFD27F /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACAD29937A7D00DFD27F /* FlowController.swift */; };
+		A48BACB129937B3D00DFD27F /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACB029937B3D00DFD27F /* AppFlowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +87,65 @@
 			remoteGlobalIDString = A458E785297ABA6000E275AC;
 			remoteInfo = SadaPayKit;
 		};
+		A48BAC8C2993797A00DFD27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A458E742297AB4CD00E275AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A40DAD39299009010087C02C;
+			remoteInfo = Networking;
+		};
+		A48BAC912993798200DFD27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A458E742297AB4CD00E275AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A40DAD39299009010087C02C;
+			remoteInfo = Networking;
+		};
+		A48BAC952993798200DFD27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A458E742297AB4CD00E275AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A458E785297ABA6000E275AC;
+			remoteInfo = SadaPayKit;
+		};
+		A48BAC9A2993799600DFD27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A458E742297AB4CD00E275AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A40DAD39299009010087C02C;
+			remoteInfo = Networking;
+		};
+		A48BAC9E2993799600DFD27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A458E742297AB4CD00E275AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A40DAD7E299285710087C02C;
+			remoteInfo = SadaPay_iOS;
+		};
+		A48BACA22993799600DFD27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A458E742297AB4CD00E275AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A458E785297ABA6000E275AC;
+			remoteInfo = SadaPayKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A48BACA42993799600DFD27F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A48BAC9D2993799600DFD27F /* SadaPay_iOS.framework in Embed Frameworks */,
+				A48BAC992993799600DFD27F /* Networking.framework in Embed Frameworks */,
+				A48BACA12993799600DFD27F /* SadaPayKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A40DAD3A299009010087C02C /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +190,10 @@
 		A48BAC822992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoShimmeringTVCell.swift; sourceTree = "<group>"; };
 		A48BAC842992D13E00DFD27F /* TrendingRepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoViewController.swift; sourceTree = "<group>"; };
 		A48BAC872992D25100DFD27F /* ConfigurableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableTableViewCell.swift; sourceTree = "<group>"; };
+		A48BACA6299379D100DFD27F /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		A48BACAA29937A5E00DFD27F /* FlowControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerTests.swift; sourceTree = "<group>"; };
+		A48BACAD29937A7D00DFD27F /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		A48BACB029937B3D00DFD27F /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +216,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48BAC8F2993798200DFD27F /* Networking.framework in Frameworks */,
+				A48BAC932993798200DFD27F /* SadaPayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +233,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48BAC9C2993799600DFD27F /* SadaPay_iOS.framework in Frameworks */,
+				A48BAC982993799600DFD27F /* Networking.framework in Frameworks */,
+				A48BACA02993799600DFD27F /* SadaPayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +250,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48BAC8A2993797A00DFD27F /* Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +397,8 @@
 		A40DAD80299285710087C02C /* SadaPay_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A48BACA5299379BF00DFD27F /* AppDependencyContainer */,
+				A48BACAF29937B2E00DFD27F /* AppFlowController */,
 				A40DAD9829928B3D0087C02C /* Modules */,
 				A40DADA52992B9B70087C02C /* Core */,
 			);
@@ -327,6 +410,7 @@
 			children = (
 				A40DADA22992B6C60087C02C /* Mock */,
 				A40DAD9429928B030087C02C /* Modules */,
+				A48BACA829937A3400DFD27F /* Core */,
 			);
 			path = SadaPay_iOSTests;
 			sourceTree = "<group>";
@@ -393,6 +477,7 @@
 		A40DADA52992B9B70087C02C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A48BACAC29937A6F00DFD27F /* Base */,
 				A40DADA92992BC140087C02C /* Reusable */,
 				A40DADA62992B9BF0087C02C /* Types */,
 			);
@@ -429,6 +514,7 @@
 				A40DAD3B299009010087C02C /* Networking */,
 				A40DAD45299009010087C02C /* NetworkingTests */,
 				A458E74B297AB4CD00E275AC /* Products */,
+				A48BAC892993797A00DFD27F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -552,6 +638,53 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		A48BAC892993797A00DFD27F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A48BACA5299379BF00DFD27F /* AppDependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACA6299379D100DFD27F /* AppDependencyContainer.swift */,
+			);
+			path = AppDependencyContainer;
+			sourceTree = "<group>";
+		};
+		A48BACA829937A3400DFD27F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACA929937A4200DFD27F /* Base */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A48BACA929937A4200DFD27F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACAA29937A5E00DFD27F /* FlowControllerTests.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A48BACAC29937A6F00DFD27F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACAD29937A7D00DFD27F /* FlowController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A48BACAF29937B2E00DFD27F /* AppFlowController */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACB029937B3D00DFD27F /* AppFlowController.swift */,
+			);
+			path = AppFlowController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -627,6 +760,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				A48BAC922993798200DFD27F /* PBXTargetDependency */,
+				A48BAC962993798200DFD27F /* PBXTargetDependency */,
 			);
 			name = SadaPay_iOS;
 			productName = SadaPay_iOS;
@@ -658,10 +793,14 @@
 				A458E746297AB4CD00E275AC /* Sources */,
 				A458E747297AB4CD00E275AC /* Frameworks */,
 				A458E748297AB4CD00E275AC /* Resources */,
+				A48BACA42993799600DFD27F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A48BAC9B2993799600DFD27F /* PBXTargetDependency */,
+				A48BAC9F2993799600DFD27F /* PBXTargetDependency */,
+				A48BACA32993799600DFD27F /* PBXTargetDependency */,
 			);
 			name = SadaPay;
 			productName = SadaPay;
@@ -698,6 +837,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A48BAC8D2993797A00DFD27F /* PBXTargetDependency */,
 			);
 			name = SadaPayKit;
 			productName = SadaPayKit;
@@ -872,16 +1012,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48BACA7299379D100DFD27F /* AppDependencyContainer.swift in Sources */,
 				A48BAC7D2992CBC700DFD27F /* TrendingRepoTVCell.swift in Sources */,
 				A48BAC722992C00700DFD27F /* TrendingRepoShimmeringTVCellViewModel.swift in Sources */,
 				A40DADAB2992BC2D0087C02C /* ReusableViewModel.swift in Sources */,
 				A48BAC802992CCB000DFD27F /* ReusableView.swift in Sources */,
 				A48BAC882992D25100DFD27F /* ConfigurableTableViewCell.swift in Sources */,
+				A48BACB129937B3D00DFD27F /* AppFlowController.swift in Sources */,
 				A40DAD9E29928BB40087C02C /* TrendingReposViewModel.swift in Sources */,
 				A48BAC852992D13E00DFD27F /* TrendingRepoViewController.swift in Sources */,
 				A40DADA82992B9CB0087C02C /* ErrorlessCombine.swift in Sources */,
 				A48BAC742992C11900DFD27F /* TrendingRepoTVCellViewModel.swift in Sources */,
 				A48BAC832992CD8100DFD27F /* TrendingRepoShimmeringTVCell.swift in Sources */,
+				A48BACAE29937A7D00DFD27F /* FlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,6 +1033,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48BAC7A2992CA7E00DFD27F /* TrendingRepoShimmeringTVCellViewModelTests.swift in Sources */,
+				A48BACAB29937A5E00DFD27F /* FlowControllerTests.swift in Sources */,
 				A40DAD9C29928BA80087C02C /* TrendingReposViewModelTests.swift in Sources */,
 				A48BAC772992C76E00DFD27F /* TrendingRepoTVCellViewModelTests.swift in Sources */,
 				A40DADA42992B6DC0087C02C /* MockReposService.swift in Sources */,
@@ -960,6 +1104,36 @@
 			platformFilter = ios;
 			target = A458E785297ABA6000E275AC /* SadaPayKit */;
 			targetProxy = A458E78F297ABA6100E275AC /* PBXContainerItemProxy */;
+		};
+		A48BAC8D2993797A00DFD27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A40DAD39299009010087C02C /* Networking */;
+			targetProxy = A48BAC8C2993797A00DFD27F /* PBXContainerItemProxy */;
+		};
+		A48BAC922993798200DFD27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A40DAD39299009010087C02C /* Networking */;
+			targetProxy = A48BAC912993798200DFD27F /* PBXContainerItemProxy */;
+		};
+		A48BAC962993798200DFD27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A458E785297ABA6000E275AC /* SadaPayKit */;
+			targetProxy = A48BAC952993798200DFD27F /* PBXContainerItemProxy */;
+		};
+		A48BAC9B2993799600DFD27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A40DAD39299009010087C02C /* Networking */;
+			targetProxy = A48BAC9A2993799600DFD27F /* PBXContainerItemProxy */;
+		};
+		A48BAC9F2993799600DFD27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A40DAD7E299285710087C02C /* SadaPay_iOS */;
+			targetProxy = A48BAC9E2993799600DFD27F /* PBXContainerItemProxy */;
+		};
+		A48BACA32993799600DFD27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A458E785297ABA6000E275AC /* SadaPayKit */;
+			targetProxy = A48BACA22993799600DFD27F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

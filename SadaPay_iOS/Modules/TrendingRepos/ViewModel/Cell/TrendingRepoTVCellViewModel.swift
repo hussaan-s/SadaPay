@@ -2,7 +2,17 @@
 import Foundation
 import SadaPayKit
 
-class TrendingRepoTVCellViewModel: ReusableViewModel {
+protocol TrendingRepoTVCellViewModelType: ReusableViewModel {
+    
+    var ownerImageURL: URL? { get }
+    var ownerHandle: String { get }
+    var name: String { get }
+    var description: String { get }
+    var language: String? { get }
+    var starsCount: Int { get }
+}
+
+class TrendingRepoTVCellViewModel: TrendingRepoTVCellViewModelType {
     
     var identifier: String = TrendingRepoTVCell.identifier
     

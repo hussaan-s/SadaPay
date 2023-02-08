@@ -1,9 +1,3 @@
-//
-//  SadaPayTests.swift
-//  SadaPayTests
-//
-//  Created by Muhammad Hussaan Saeed on 1/20/23.
-//
 
 import XCTest
 @testable import SadaPay

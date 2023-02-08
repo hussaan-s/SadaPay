@@ -1,6 +1,8 @@
 
 import Foundation
 
-class TrendingRepoShimmeringTVCellViewModel: ReusableViewModel {
+protocol TrendingRepoShimmeringTVCellViewModelType: ReusableViewModel { }
+
+class TrendingRepoShimmeringTVCellViewModel: TrendingRepoShimmeringTVCellViewModelType {
     var identifier: String = TrendingRepoShimmeringTVCell.identifier
 }
