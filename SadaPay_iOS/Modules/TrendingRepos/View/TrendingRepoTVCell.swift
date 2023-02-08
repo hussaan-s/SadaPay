@@ -135,7 +135,7 @@ extension TrendingRepoTVCell {
             ownerImageView.heightAnchor.constraint(equalToConstant: 50),
             
             repoStarsLabel.imageView.heightAnchor.constraint(equalToConstant: 18),
-            repoLanguageLabel.imageView.heightAnchor.constraint(equalToConstant: 18),
+            repoLanguageLabel.imageView.heightAnchor.constraint(equalToConstant: 14),
             
             mainStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 18),
             mainStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 18),
