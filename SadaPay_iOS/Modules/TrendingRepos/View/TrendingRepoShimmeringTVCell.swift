@@ -45,6 +45,7 @@ class TrendingRepoShimmeringTVCell: ConfigurableTableViewCell,
 extension TrendingRepoShimmeringTVCell {
     
     private func setupViews() {
+        selectionStyle = .none
         contentView.addSubview(darkContentView)
         contentView.addSubview(lightContentView)
     }
