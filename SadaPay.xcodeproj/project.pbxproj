@@ -56,6 +56,8 @@
 		A48BACAB29937A5E00DFD27F /* FlowControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACAA29937A5E00DFD27F /* FlowControllerTests.swift */; };
 		A48BACAE29937A7D00DFD27F /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACAD29937A7D00DFD27F /* FlowController.swift */; };
 		A48BACB129937B3D00DFD27F /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACB029937B3D00DFD27F /* AppFlowController.swift */; };
+		A48BACB62993851F00DFD27F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A48BACB52993851F00DFD27F /* Kingfisher */; };
+		A48BACBA2993856700DFD27F /* UILeadingImageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BACB92993856700DFD27F /* UILeadingImageLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,27 @@
 			remoteGlobalIDString = A458E785297ABA6000E275AC;
 			remoteInfo = SadaPayKit;
 		};
+		A48BACBB2993878300DFD27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A458E742297AB4CD00E275AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A458E749297AB4CD00E275AC;
+			remoteInfo = SadaPay;
+		};
+		A48BACBD2993878800DFD27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A458E742297AB4CD00E275AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A458E749297AB4CD00E275AC;
+			remoteInfo = SadaPay;
+		};
+		A48BACBF2993878B00DFD27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A458E742297AB4CD00E275AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A458E749297AB4CD00E275AC;
+			remoteInfo = SadaPay;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -194,6 +217,7 @@
 		A48BACAA29937A5E00DFD27F /* FlowControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerTests.swift; sourceTree = "<group>"; };
 		A48BACAD29937A7D00DFD27F /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		A48BACB029937B3D00DFD27F /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
+		A48BACB92993856700DFD27F /* UILeadingImageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILeadingImageLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48BACB62993851F00DFD27F /* Kingfisher in Frameworks */,
 				A48BAC8F2993798200DFD27F /* Networking.framework in Frameworks */,
 				A48BAC932993798200DFD27F /* SadaPayKit.framework in Frameworks */,
 			);
@@ -401,6 +426,7 @@
 				A48BACAF29937B2E00DFD27F /* AppFlowController */,
 				A40DAD9829928B3D0087C02C /* Modules */,
 				A40DADA52992B9B70087C02C /* Core */,
+				A48BACB72993853600DFD27F /* SadaPayUIKit */,
 			);
 			path = SadaPay_iOS;
 			sourceTree = "<group>";
@@ -685,6 +711,22 @@
 			path = AppFlowController;
 			sourceTree = "<group>";
 		};
+		A48BACB72993853600DFD27F /* SadaPayUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACB82993854D00DFD27F /* UILeadingImageLabel */,
+			);
+			path = SadaPayUIKit;
+			sourceTree = "<group>";
+		};
+		A48BACB82993854D00DFD27F /* UILeadingImageLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A48BACB92993856700DFD27F /* UILeadingImageLabel.swift */,
+			);
+			path = UILeadingImageLabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -742,6 +784,7 @@
 			);
 			dependencies = (
 				A40DAD44299009010087C02C /* PBXTargetDependency */,
+				A48BACC02993878B00DFD27F /* PBXTargetDependency */,
 			);
 			name = NetworkingTests;
 			productName = NetworkingTests;
@@ -764,6 +807,9 @@
 				A48BAC962993798200DFD27F /* PBXTargetDependency */,
 			);
 			name = SadaPay_iOS;
+			packageProductDependencies = (
+				A48BACB52993851F00DFD27F /* Kingfisher */,
+			);
 			productName = SadaPay_iOS;
 			productReference = A40DAD7F299285710087C02C /* SadaPay_iOS.framework */;
 			productType = "com.apple.product-type.framework";
@@ -780,6 +826,7 @@
 			);
 			dependencies = (
 				A40DAD89299285720087C02C /* PBXTargetDependency */,
+				A48BACBC2993878300DFD27F /* PBXTargetDependency */,
 			);
 			name = SadaPay_iOSTests;
 			productName = SadaPay_iOSTests;
@@ -856,6 +903,7 @@
 			);
 			dependencies = (
 				A458E790297ABA6100E275AC /* PBXTargetDependency */,
+				A48BACBE2993878800DFD27F /* PBXTargetDependency */,
 			);
 			name = SadaPayKitTests;
 			productName = SadaPayKitTests;
@@ -912,6 +960,9 @@
 				Base,
 			);
 			mainGroup = A458E741297AB4CD00E275AC;
+			packageReferences = (
+				A48BACB42993851F00DFD27F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A458E74B297AB4CD00E275AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1019,6 +1070,7 @@
 				A48BAC802992CCB000DFD27F /* ReusableView.swift in Sources */,
 				A48BAC882992D25100DFD27F /* ConfigurableTableViewCell.swift in Sources */,
 				A48BACB129937B3D00DFD27F /* AppFlowController.swift in Sources */,
+				A48BACBA2993856700DFD27F /* UILeadingImageLabel.swift in Sources */,
 				A40DAD9E29928BB40087C02C /* TrendingReposViewModel.swift in Sources */,
 				A48BAC852992D13E00DFD27F /* TrendingRepoViewController.swift in Sources */,
 				A40DADA82992B9CB0087C02C /* ErrorlessCombine.swift in Sources */,
@@ -1134,6 +1186,21 @@
 			isa = PBXTargetDependency;
 			target = A458E785297ABA6000E275AC /* SadaPayKit */;
 			targetProxy = A48BACA22993799600DFD27F /* PBXContainerItemProxy */;
+		};
+		A48BACBC2993878300DFD27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A458E749297AB4CD00E275AC /* SadaPay */;
+			targetProxy = A48BACBB2993878300DFD27F /* PBXContainerItemProxy */;
+		};
+		A48BACBE2993878800DFD27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A458E749297AB4CD00E275AC /* SadaPay */;
+			targetProxy = A48BACBD2993878800DFD27F /* PBXContainerItemProxy */;
+		};
+		A48BACC02993878B00DFD27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A458E749297AB4CD00E275AC /* SadaPay */;
+			targetProxy = A48BACBF2993878B00DFD27F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1810,6 +1877,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A48BACB42993851F00DFD27F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A48BACB52993851F00DFD27F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A48BACB42993851F00DFD27F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A458E742297AB4CD00E275AC /* Project object */;
 }
